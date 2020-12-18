@@ -1,0 +1,25 @@
+programa
+{
+	funcao inicio()
+	{
+		
+	
+		real a, b, soma, sub
+		
+		escreva("Digite um número:\n")
+		leia(a)	
+
+		b = 1
+			
+
+		soma = a + b // Soma os dois valores
+		sub  = a - b // Subtrai os dois valores
+
+		escreva("O sucessor é:" + soma + "\n")
+		escreva("O antecessor é:" + sub + "\n")
+
+
+
+	}
+	
+}
