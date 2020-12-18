@@ -1,1 +1,1 @@
-# studying Portugol
+# Studying Portugol
