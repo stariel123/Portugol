@@ -3,23 +3,24 @@ programa
 	funcao inicio()
 	{
 		
-	
-		real a, b, soma, sub
-		
-		escreva("Digite um número:\n")
-		leia(a)	
+	      //declaração de variaveis
+		inteiro a, soma, sub
 
-		b = 1
+		escreva("-----------------\n")
+		escreva("Digite um número:")
+		escreva("\n-----------------\n")
+		leia(a)	
 			
 
-		soma = a + b // Soma os dois valores
-		sub  = a - b // Subtrai os dois valores
+		soma = a + 1 // Soma os dois valores
+		sub  = a - 1 // Subtrai os dois valores
 
+          escreva("\n--------RESULTADO--------\n")
 		escreva("O sucessor é:" + soma + "\n")
-		escreva("O antecessor é:" + sub + "\n")
-
-
+		escreva("E o antecessor é:" + sub + "\n")
+        
 
 	}
 	
 }
+
