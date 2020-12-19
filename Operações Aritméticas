@@ -1,0 +1,40 @@
+programa
+{
+      //biblioteca para converter inteiro para real
+	inclua biblioteca Tipos --> t
+	funcao inicio()
+	{
+
+	
+	inteiro a, b, soma, subtracao, multiplicacao, div_inteira
+     real div_real, resto_div
+     
+	
+		escreva("Digite um numero:")
+		leia(a)
+		escreva("Digite outro numero:")
+		leia(b)
+
+		limpa()
+
+		soma = a + b  //soma de dois valores
+		subtracao = a - b  //subtração de dois valores
+		multiplicacao = a * b  //multiplicação de dois valores
+		div_inteira = a / b  //divisão inteira
+		div_real = t.inteiro_para_real(a) / b  //divisão real
+		resto_div = a % b // resto da divisão
+
+		escreva("------RESULTADOS-------\n")
+		escreva("-----------------------\n")
+		escreva("SOMA:" + soma + "\n")
+		escreva("SUBTRAÇÃO:" + subtracao + "\n")
+		escreva("MULTIPLICAÇÃO:" + multiplicacao + "\n")
+		escreva("DIVISÃO INTEIRA:" + div_inteira + "\n")
+		escreva("DIVISÃO REAL:" + div_real + "\n")
+		escreva("RESTO DA DIVISÃO:" + resto_div + "\n")
+         
+
+
+		
+	}
+}
