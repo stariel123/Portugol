@@ -1,0 +1,25 @@
+programa
+{
+	
+	funcao inicio()
+	{
+
+	//variaveis
+	 real metro, km, hm, dam, dm, cm, mm	
+
+		escreva(" Diga uma distância em metros:")
+		leia(metro)
+
+		escreva("------CONVERTENDO------\n")
+		escreva(metro / 1000 + " Quilometros\n")
+		escreva(metro / 100 + " Hectometros\n")
+		escreva(metro / 10 + " Decametros\n")
+		escreva(metro * 10 + " Decimetros\n")
+		escreva(metro * 100 + " Centimetros\n")
+		escreva(metro * 1000 + " Milimetros\n")
+	
+	
+
+		
+	}
+}
