@@ -1,0 +1,25 @@
+programa
+{
+
+	//informção importante: um litro de tinta pinta 2m²
+	funcao inicio()
+	{
+
+	//variaveis	
+     real larg, alt, area, latas
+
+ 
+	     escreva("Largura da parede: ")
+          leia(larg)        
+          escreva("Altura da parede: ")
+          leia(alt)
+
+          area = larg * alt
+          
+          escreva("Uma areá de " + larg + " x " + alt + " tem uma área de: " + area + "\n")
+          escreva("Precisamos de " + area / 2 + " latas de tintas")
+          
+         
+		
+	}
+}
