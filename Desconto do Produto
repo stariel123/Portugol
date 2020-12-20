@@ -1,0 +1,25 @@
+programa
+{
+
+	// Arredonda o número de casas decimais, isto é,
+	// 2 casas depois da vírgula
+	inclua biblioteca Matematica --> mat
+	
+	funcao inicio()
+	{
+
+	real preco, desconto, npreco
+		
+		escreva("Qual o preço do produto? ")
+          leia(preco)
+     
+          desconto = preco * 5 / 100
+          npreco = preco - desconto
+
+          npreco = mat.arredondar (npreco, 2)
+          escreva("Com desconto de 5%, o produto sai por " + npreco)
+         
+       
+		
+	}
+}
