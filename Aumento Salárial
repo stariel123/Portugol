@@ -1,0 +1,32 @@
+programa
+{
+
+	
+	funcao inicio()
+	{
+		real salario, reajuste, aumento, salariof
+          cadeia nome
+		
+		escreva("Escreva o nome do funcionário: ")
+		leia(nome)
+
+		escreva("Salário: ") //salário do funcionário
+          leia(salario)
+
+          escreva("Reajuste ") //porcentagem de aumento
+          leia(reajuste)
+
+          limpa()
+
+          aumento = salario * reajuste / 100
+          salariof = aumento + salario
+          
+          escreva("------RESULTADO------\n")
+          escreva( nome," ganhava " + salario + " R$\n")
+          escreva("e depois de ganhar " + reajuste + "% de aumento\n")
+          escreva("vai passar a ganhar " + salariof + "R$.")
+          
+
+		
+	}
+}
