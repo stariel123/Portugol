@@ -1,0 +1,16 @@
+programa
+{
+	
+	funcao inicio()
+	{
+
+		real valor
+		
+		escreva("Qual foi o valor das suas compras?:\n ")
+          leia(valor)
+
+          se (valor >= 500) {
+          	escreva("Parabéns, você ganhou 10% de desconto !\n")
+          }
+         
+          escreva("Você comprou R$ " + valor + " na nossa loja. Obrigado !")
