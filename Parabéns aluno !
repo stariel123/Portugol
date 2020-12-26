@@ -1,0 +1,27 @@
+programa
+{
+	
+	funcao inicio()
+	{
+          //programa para parabenizar aluno que tirar uma media satisfatoria
+          
+		real nota1, nota2, media
+		
+		escreva("Qual sua primeira nota?:\n")
+		leia(nota1)
+
+		escreva("Qual sua segunda nota?:\n")
+          leia(nota2)
+          
+		media = (nota1 + nota2) /2
+
+		escreva("---------RESULTADO----------\n")
+
+             
+          se (media >=7) {
+          	escreva("MEUS PARABÉNS!")
+          }
+
+      	     	              
+          escreva(" A sua média foi de " + media)
+          escreva("\n")
