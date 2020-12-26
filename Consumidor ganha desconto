@@ -4,13 +4,20 @@ programa
 	funcao inicio()
 	{
 
-		real valor
+		real valor, desconto, npreco
 		
 		escreva("Qual foi o valor das suas compras?:\n ")
           leia(valor)
 
+          desconto = (valor * 10) /100
+          npreco = valor - desconto
+
+          limpa()
+
+          escreva("Você comprou R$ " + valor + " na nossa loja. Obrigado !\n")
+          
           se (valor >= 500) {
-          	escreva("Parabéns, você ganhou 10% de desconto !\n")
-          }
-         
-          escreva("Você comprou R$ " + valor + " na nossa loja. Obrigado !")
+          	escreva("----------ATENÇÃO-----------\n")
+          	escreva("Por fazer mais de R$500 reais de compras,\n")
+          	escreva("você vai receber R$" + desconto + " reais de desconto!\n")
+          	escreva("O valor a ser pago é de R$" + npreco + " reais. Volte sempre!\n")
