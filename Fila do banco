@@ -1,0 +1,33 @@
+programa
+{
+	//programa que ajuda um banco, elndo em que ano uma pessoa nasceu e, de acordo com a idade, 
+	//mostra que ela deve se dirigir a fila preferencial (para 65 anos ou mais)
+     inclua biblioteca Calendario --> cal
+	
+	funcao inicio()
+	{
+           
+          //variaveis
+		inteiro ano, atual = cal.ano_atual(), menos
+		
+		escreva("Em que ano você nasceu ?: ")
+          leia(ano)
+
+          menos = atual - ano
+ 
+          escreva("Você tem " + menos + " anos de idade, certo ? \n")
+          escreva("-----------------------------------------------\n")
+          escreva("Seja bem vindo(a) ao banco estudonalta! \n")
+          escreva("\n")
+
+          //condicional para idosos de 65 anos ou mais
+          se (menos >= 65) {
+          	escreva("===========ATENÇÃO============\n")
+          	escreva ("DIGIRA-SE A FILA PREFERENCIAL !\n")
+          }
+	
+          
+
+		
+	}
+}
