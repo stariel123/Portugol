@@ -1,0 +1,22 @@
+programa
+{
+	//programa para auxiliar uma empresa de viagens, onde dependendo da distancia, o passageiro ganhará desconto.
+	funcao inicio()
+	{
+		real km
+
+		escreva("Bem vindo a agência de viagens!\n") 
+		escreva("Informe a distancia total da viagem em km: ")
+		leia(km)
+    escreva("-------------------------------------------\n")
+      
+
+		se (km <= 199) {
+			escreva("Uma viagem de " + km + "km vai custar R$0.50 por km.\n")
+			escreva("O valor total é de R$" + km * 0.50 + " reais.\n") 
+			escreva("\n") 
+			
+		} senao se (km >= 200) {
+			escreva("Uma viagem de " + km + "km vai custar R$0.30 por km.\n")
+			escreva("O valor total é de R$" + km * 0.35 + " reais.\n")
+			escreva("\n")
