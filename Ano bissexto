@@ -1,0 +1,21 @@
+programa
+{
+	//progrma para identificar se o ano informado é ou não bissexto
+	funcao inicio()
+	{
+		inteiro ano
+		
+		
+		escreva("Digite um ano qualquer!:")		
+          leia(ano)         
+          escreva("\n----------ANALISANDO-----------\n")
+          escreva("\n")
+
+           //formula para identificar anos bissextos
+           se ( ano % 4 == 0 e ano % 100 != 0 ou ano % 400 == 0) {
+          	escreva("O ano de " + ano + " é bissexto!\n") 
+          
+           } senao {
+           	escreva("O ano de " + ano + " não é bissexto!\n")                
+           }
+         
