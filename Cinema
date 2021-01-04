@@ -1,0 +1,34 @@
+programa
+{
+	//programa que leia quanto dinheiro a pessoa tem e mostra se ela pode ou não entrar no cinema.
+	inclua biblioteca Calendario --> cal
+	funcao inicio()
+	{
+
+	real valor
+	inteiro hora = cal.hora_atual(falso), sessao = 18
+
+     escreva("=========== CINEMA ESTUDONALTA ============\n")
+     escreva("\n")
+     escreva("HORÁRIO DO FILME: 18:00 // ")
+     escreva("PREÇO DO INGRESSO: R$20\n")
+     escreva("-------------------------------------------\n")
+	
+	escreva("Quanto dinheiro você tem? R$")
+	leia(valor)
+
+	escreva("\nAgora são " + hora + " horas.\n")
+
+	se (valor >= 20 e hora <= sessao) {
+		escreva("Você consegue comprar o impresso!")
+		escreva("\n")
+		
+	} senao {
+		escreva("Infelismente não é possível comprar o ingresso, tente outro dia :(")
+		escreva("\n")
+	}
+ 
+  
+		
+	}
+}
