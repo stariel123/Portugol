@@ -1,0 +1,27 @@
+programa
+{
+	//exercicio para saber se um número é positivo, negativo ou nulo
+	funcao inicio()	
+	{
+
+	real num
+	
+		escreva("Digite um número: ")
+          leia(num)
+
+          se (num < 0) {
+          	escreva("Você digitou um numero NEGATIVO!\n")
+          	escreva("-------------------------------\n")
+          	
+          } senao se (num > 0) {
+          	escreva("Você digitou um numero POSITIVO\n")
+          	escreva("-------------------------------\n")
+          } senao se (num == 0) {
+          	escreva("Você digitou um numero NULO\n")
+          	escreva("-------------------------------\n")
+
+
+          	
+          }                 	
+	}
+}
