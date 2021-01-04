@@ -1,0 +1,26 @@
+programa
+{
+	//PROGRAMA QUE CALCULA O OPOSTO OU O INVERSO DE UM NUMERO
+	funcao inicio()
+	{
+
+     real numero
+	
+		escreva("Digite um numero qualquer!: ")
+		leia(numero)
+
+		
+     se (numero > 0) {
+     	escreva("O inverso de " + numero + " é " + 1 / numero)
+     	escreva("\n")
+     	
+     } senao se (numero < 0) {
+     	escreva("O oposto de " + numero + " é " + numero * -1)
+     	escreva("\n")
+     }
+     	
+     
+  
+	
+	}
+}
