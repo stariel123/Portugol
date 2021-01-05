@@ -19,6 +19,10 @@ programa
           } senao se (n1 < n2) {
           	escreva("Os números em ordem crescente são: " + n2 + " e " + n1)
           	escreva("\n")
+          	
+          } senao se (n1 == n2) {
+          	escreva("Não tem como colocar esses fatores em ordem, eles são iguais")
+          	escreva("\n")
           }
                   
 
