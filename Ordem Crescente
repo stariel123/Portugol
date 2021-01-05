@@ -1,0 +1,27 @@
+programa
+{
+	//programa que organiza os numeros em uma ordem crescente
+	funcao inicio()
+	{
+
+	inteiro n1,n2
+	
+		escreva("Digite um número: ")
+          leia(n1)
+
+          escreva("Digite outro numero: ")
+          leia(n2)
+
+          se (n1 > n2) {
+          	escreva("Os números em ordem crescente são: " + n1 + " e " + n2)
+          	escreva("\n")
+          	
+          } senao se (n1 < n2) {
+          	escreva("Os números em ordem crescente são: " + n2 + " e " + n1)
+          	escreva("\n")
+          }
+                  
+
+		
+	}
+}
