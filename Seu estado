@@ -1,0 +1,29 @@
+programa
+{  //programa para dizer de qual estado você é
+	inclua biblioteca Texto --> tx
+	funcao inicio()
+	{
+		cadeia estado
+	
+		escreva("Em que estado você nasceu?: ")
+		leia(estado)
+
+          estado = tx.caixa_alta(estado)
+          escreva("Nascendo no estado " + estado + " você é ")
+
+		se (estado == "RJ") {
+			escreva("FLUMINENSE")
+			
+		} senao se (estado == "CE") {
+			escreva("CEARENSE")	
+		} senao se (estado == "RS") {
+			escreva("GAÙCHO")
+		} senao se (estado == "SC") {
+			escreva("CATARINENSE")
+		} senao se (estado == "SP") {
+			escreva("PAULISTA")
+		} senao {
+			escreva("natural da sua cidade, mas não sei como te chamar")
+		
+		}
+          escreva("\n")
