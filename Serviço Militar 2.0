@@ -1,0 +1,41 @@
+programa
+{  
+      inclua biblioteca Calendario --> cal
+	//serviço miliar 2.0	
+	funcao inicio()
+	{
+		inteiro ano, atual = cal.ano_atual(), alist, alist1
+		
+		escreva("Em que ano você nasceu?: ")
+		leia(ano)        
+		escreva("--------------------------------------------\n")
+
+          alist = atual - ano  
+          alist1= ano + 18
+
+          escreva("Sua idade atual é de " + alist + " anos\n")     
+          
+
+          
+		se (alist < 18) {			
+			escreva("Você ainda não completou 18 anos.\n")
+			escreva("Mas poderar se alistar no ano de " + alist1 + "\n")
+			escreva("Ainda falta" + (alist1 - atual) + "anos." )
+			escreva("\n")
+			
+		} senao se (alist > 18) {
+			escreva("Você devia ter se alistado no ano de " + alist1 + "\n")
+			escreva("Já se passaram " + ( atual - alist1) + " anos.\n")
+			escreva("Espero sinceramente que você tenha se alistado.")						
+			escreva("\n")	
+			
+		} senao {			
+			escreva("Você completa 18 anos nesse ano de " + atual + ", SE ALISTE URGENTE!!")
+			escreva("\n")
+			
+		}
+		
+
+		
+	}
+}
