@@ -1,0 +1,67 @@
+programa
+{
+	// Define um preço de um produto dependendo do período (feriado)
+	funcao inicio()
+	{
+
+		real preco, n1, n2, n3, n4, n5
+          caracter opcao	
+
+		escreva("Digite o preço de um produto(R$): ")
+		leia(preco)
+
+	     escreva("\t -------------------\n")
+		escreva("\t ESCOLHA UM PERÍODO\n")
+		escreva("\t =========================\n")
+          escreva("\t 1 \t Carnaval \n")
+          escreva("\t 2 \t Férias Escolares \n")
+          escreva("\t 3 \t Dia das crianças \n")
+          escreva("\t 4 \t Black friday \n")
+          escreva("\t 5 \t Natal \n")       
+          escreva("\t =========================\n")
+
+          escreva("\t Digite sua opção: ")
+          leia(opcao)
+          escreva("\n")
+
+          n1 = (preco * 10) /100
+          n2 = (preco * 20) /100
+          n3 = (preco * 5) /100
+          n4 = (preco * 30) /100
+          n5 = (preco * 5) /100
+                     
+
+          escolha(opcao) {        	        
+               caso '1' : 
+               escreva("Na época de carnaval, o preço do produto cai para " + (preco + n1))
+               escreva("\n")
+               pare
+               caso '2' : 
+               escreva("Na época de carnaval, o preço do produto cai para " + (preco + n2)) 
+               escreva("\n") 
+               pare
+               caso '3' :
+               escreva("Na época de carnaval, o preço do produto cai para " + (preco + n3))
+               escreva("\n") 
+               pare
+               caso '4' :
+               escreva("Na época de carnaval, o preço do produto cai para " + (preco - n4))
+               escreva("\n")              
+               pare
+               caso '5' :
+               escreva("Na época de carnaval, o preço do produto cai para" + (preco + n5))
+               escreva("\n") 
+               pare
+               caso contrario :
+               escreva("Nesse feriado não há mudança de valor !\n")
+               pare
+          }
+               escreva("-----------------------------------------------------\n")
+               escreva("\t         VOLTE SEMPRE !!")  
+               escreva("\n")   
+              
+
+
+		
+	}
+}
