@@ -1,0 +1,32 @@
+programa
+{    //programa que faz uma contagem de acordo com o desejo do usuário
+	inclua biblioteca Util --> u
+	
+	funcao inicio()
+	{
+
+		inteiro n1, n2, n3
+        
+		escreva("Onde começa a contagem?: ")
+		leia(n1)
+
+		escreva("\nOnde termina a contagem?: ")
+		leia(n2)
+
+		escreva("\nQual vai ser o incremento?: ")
+		leia(n3)
+   
+		escreva("-----------------------------\n")		
+		
+		enquanto (n1 <= n2) {
+			escreva(n1, "-")
+			u.aguarde(500)
+			n1 = n1 + n3
+			
+		}
+		
+          escreva("FIM !\n")
+
+	
+	}
+}
