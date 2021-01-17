@@ -1,0 +1,35 @@
+programa
+{
+	//programa que conta três numeros e logo em seguida mostra "PIM", conhecido como 'jogo do pim'
+	inclua biblioteca Util --> u
+	funcao inicio()
+	{
+		
+
+		inteiro n1 = 1, n2
+		
+		escreva("Quer contar até quanto?: ")
+		leia(n2)
+
+
+		enquanto (n1 <= n2) {
+			se (n1 % 4 != 0) {
+				escreva(n1, " - ")			
+			     n1 = n1 + 1
+			     u.aguarde(300)
+			} senao {
+			escreva("PIM! -")
+			n1 = n1 + 1
+			u.aguarde(300)
+		}
+			
+		}
+
+		escreva(" FIM ")
+		escreva("\n")
+
+
+
+		
+	}
+}
