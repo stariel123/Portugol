@@ -1,0 +1,29 @@
+programa
+{
+	inclua biblioteca Util --> ut	
+	funcao inicio()
+	{
+
+		inteiro n1 = 1, n2, soma = 0, sorteio 
+
+		escreva("Quantos numeros você quer sortear?: ")
+          leia(n2)
+          escreva("Sorteando os " +  n2 + " números... \n")
+          escreva("-------------------------------------------\n")
+          
+		enquanto (n1 <= n2) {
+			sorteio = ut.sorteia(0, 10)
+			soma = soma + sorteio
+			  escreva(sorteio, " - ")			
+			n1 = n1 + 1		
+			ut.aguarde(500)	
+		}
+			     
+          escreva("\n-------------------------------------------\n")
+          escreva("PRONTO !!\n")
+		escreva("Somando todos os valores, temos " + soma + ".")
+		escreva("\n\n")
+         
+		
+	}
+}
