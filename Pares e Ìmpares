@@ -1,29 +1,36 @@
 programa
 {
-	inclua biblioteca Tipos --> t
+	
 	funcao inicio()
 	{
 
-      inteiro par = 0, imp = 0, n1 = 0, num
-      
+     inteiro c = 1, impar = 0, par = 0, num
+     real n1 = 0, n2 = 0
+     
 
-      enquanto (n1 <= 4) {   	
-      	escreva("Digite um numero: ")
-      	leia(num)
-      	se (num % 2 == 0.) {
-      		par = par + num 
-      		
-      	} senao {
-      		imp = imp + num
-      	}
-          n1++
-      	
-      }     
-      
-       escreva("------------------------------------------\n")
-       escreva("A soma dos números pares deu " + par + ".\n")
-       escreva("A soma dos números ímpares deu " + imp + ".")
-       escreva("\n")
+     enquanto (c <= 5) {
+     	escreva("Digite o " + c + "º valor: ")
+     	leia(num)
+     	se (num % 2 == 0) {
+     		par++
+     		n1 = n1 + num
+     		 
+        } se (num % 2 != 0) {
+        	   impar++
+        	   n2 = n2 + num
+        }
+        c++    	
+        }
+
+        
+        escreva("\n")
+        escreva("------------------------------------------------------------------------\n")
+        escreva("Você digitou " + par + " números pares. A média é " + n1 / par + "\n")
+        escreva("Você digitou " + impar + " números impares. A média é " + n2 / impar )
+        escreva("\n")
+
+
+
 		
 	}
 }
