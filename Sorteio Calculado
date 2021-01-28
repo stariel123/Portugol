@@ -1,0 +1,33 @@
+programa
+{    //exercicio onde sorteia a quantidade de números desejada e informa quais são divisíveis por três e cinco.
+	inclua biblioteca Util --> u
+	funcao inicio()
+	{
+	
+     inteiro c = 1, tot = 0, sort, div = 0, tres = 0
+
+     escreva("Quantos números serão sorteados?: ")
+     leia(tot)
+     escreva("Sorteando os números...")
+     escreva("\n--------------------------------------\n")
+    
+     enquanto (c <= tot) {
+     	sort= sorteia(1,10)   	
+     	escreva(sort + "..") 
+     	u.aguarde(300)   	
+     	  se (sort % 5 == 0) {
+     	  	div++
+     	  } senao se (sort % 3 == 0) {
+     	  	tres++
+     	  }
+     	  c++
+     } 
+     escreva("\n--------------------------------------\n")
+     escreva("Dos " + tot + " números sorteados..\n")
+     escreva(div + " são divisíveis por cinco\n")
+     escreva(tres + " são divisíveis por três.")
+     escreva("\n\n")
+
+		
+	}
+}
