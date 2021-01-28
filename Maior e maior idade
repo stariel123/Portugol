@@ -1,0 +1,44 @@
+programa
+{
+	
+// programa que cadastra cinco pessoas e informa qual delas é a mais jovem e a mais velha.
+	funcao inicio()
+	{
+
+     cadeia nome, nome1 = "", nome2 = ""
+     inteiro c = 1, n = 0, maior = 0, menor = 0
+
+     enquanto (c <= 5) {
+     	escreva("--------------\n")
+     	escreva( c + "º PESSOA?:\n")
+     	escreva("--------------\n")
+     	escreva("NOME: ")
+     	leia(nome)   	
+     	escreva("Qual a idade?: ")    	
+     	leia(n)
+     	
+          se (c == 1) {
+          	maior = n
+          	menor = n
+          	nome1 = nome
+          	nome2 = nome
+          } senao se (n < menor) {
+          	nome1 = nome
+          	menor = n
+          } se (n > maior) {
+          	nome2 = nome
+          	maior = n
+          }
+          c++
+          }
+          
+         escreva("\n--------------------------------\n")
+         escreva("A pessoa mais nova é " + nome1 + " que tem " + menor + "\n")
+         escreva("e a pessoa mais velha é " + nome2 + " que tem "  + maior + "\n")
+         escreva("\n\n")
+
+
+
+     
+	}
+}
