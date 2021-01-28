@@ -1,0 +1,61 @@
+programa
+{
+	
+//programa que cadastra a quantidade de pessoas desejada e mostra quantos homens e mulheres estão acima do peso
+	funcao inicio()
+	{
+
+     inteiro c = 1, tot, ref, peso, acima = 0, abaixo = 0, ho = 0, mu = 0
+     caracter sexo
+     
+
+     
+
+
+     escreva("Quantos pessoas serão cadastradas ?: ")
+     leia(tot)
+     escreva("Qual o peso de referência (kg) ?: " )
+     leia(ref)
+     escreva("\n")
+     
+     enquanto (c <= tot) {
+     	escreva("----------------------------")
+     	escreva("\n   PESSOA " + c + " de " + tot)  
+     	escreva("\n----------------------------\n")
+     	escreva("Qual o peso ?(kg): ")
+     	leia(peso)
+     	escreva("SEXO (H/M): ")
+     	leia(sexo)
+     	
+     	
+          se (peso < ref) {
+          	escreva("===== PESO DENTRO DO LIMITE (" + ref + "kg)=====\n")
+          	escreva("\n")
+          	abaixo++
+          	
+          } senao se (peso >= ref) {
+               escreva("===== PESO ACIMA DO LIMITE (" + ref + "kg)=====\n")
+               escreva("\n")
+                     se (sexo == 'H' ou sexo == 'h') {
+     		      ho++
+     	}
+                     se (sexo == 'M' ou sexo == 'm') {
+                        mu++                     
+          }
+     	     acima++
+          }           
+          
+          c = c + 1
+          } 
+         
+           escreva("\n")
+           escreva("--------------------------------------------------------------\n")
+           escreva("Ao todo, temos " + acima + " acima do peso.\n")
+           escreva("e dentre elas, " + ho + " são homens e " + mu + " são mulheres.")
+           escreva("\n")
+     
+
+
+		
+	}
+}
